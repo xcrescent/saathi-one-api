@@ -1,0 +1,62 @@
+POST https://saathi-posts-production.up.railway.app/addPost HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Sahar Salimi",
+    "profileUrl": "assets/profile1.jpg",
+    "headline": "cancer survivor",
+    "tags": "#Respect #SadioMane #PayBack #Love",
+    "description": "These 2 women are very brave. Me and mom both fighting cancer. 58 and 85",
+    "isVideoPost": false,
+    "comments": "500",
+    "video": "",
+    "isOnline": false,
+    "image": "assets/img4.png",
+    "likes": "10k"
+}
+###
+POST http://localhost:5000/addPost HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Anonymous",
+    "profileUrl": "assets/profile4.jpg",
+    "headline": "Breast cancer survivor",
+    "tags": "#Hopeiseverything",
+    "description": "Some real-life stories define the power of love so strong that we can't resist but believe.They come against all odds to rise and shine with all the powers.They don't focus on posting with respective partners of outing, date, movie, lone drive etc.They keep on paddling in the storm, they dance in the rain that the universe surrender to show them up the rainbow.Exactly one year ago on Valentine's day when Aindrila(Bengali actress) & Sabyasachi(Bengali actor)were preparing for a dinner date, the rule-maker was preparing a bundle of challenges.When she was screaming out of severe pain in her back, the doctor confirmed she met Cancer Attack for the second time.And from that day, there was no special day to love her a little extra.In his opinion, the fight with Aindrila was also his.At the beginning of the treatment, Aindrila was losing all the hope to live.She cried all day, threw away the medicines.The fear of losing the limelight was killing her.Sabyasachi proved that love is a great blend of caring and daring.A caring heart walks more than the extra mile to offer service to the beloved.After the surgery, half of her lungs, the skin of the heart, the pericardium & part of the diaphragm were removed.As per the current update, she is out of danger.His suggestion for the people who don't believe in love is to visit a cancer hospital where thousands of men wait for the arrival of their loved ones.",
+    "isVideoPost": false,
+    "comments": "1k",
+    "video": "",
+    "isOnline": true,
+    "image": "assets/qwerty.png",
+    "likes": "20k"
+}
+###
+GET http://localhost:5000/posts HTTP/1.1
+###
+POST http://localhost:5000/likePost HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "63f3d07c63c36907d752b734",
+    "likes": "10k"
+}
+###
+POST https://malicious-place-production.up.railway.app/likePost HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "63dd7438318f5e5245da6fa7",
+    "likes": "10k"
+}
+###
+POST http://localhost:5000/update HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Utkarsh Singh",
+    "email":"admin@tecrun.tech",
+    "password": "150783Pn@"
+}
+###
+GET https://overjoyed-sound-production.up.railway.app/ HTTP/1.1

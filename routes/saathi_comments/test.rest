@@ -1,0 +1,19 @@
+POST http://localhost:5000/comment HTTP/1.1
+Content-Type: application/json
+
+{
+     "id": "63f3d07c63c36707d752b734",
+    "uid": "34",
+    "comment": "This is a comment"
+}
+###
+POST http://localhost:5000/deleteComment HTTP/1.1
+Content-Type: application/json
+
+{
+     "id": "63f3d07c63c36707d752b734",
+    "uid": "34",
+    "commentId": "63f9053694654e6b907376a6"
+}
+###
+GET http://localhost:5000/getLikes?id=63f3d07c63c36707d752b734 HTTP/1.1
